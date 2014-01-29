@@ -1,0 +1,306 @@
+.pointer {
+	cursor: pointer;	
+}
+.floatright {
+	float: right;	
+}
+.center {
+    margin:0 auto;
+    text-align: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#backgroundPopup { 
+	z-index:1;
+	position: fixed;
+	display:none;
+	height:100%;
+	width:100%;
+	background:#000000;	
+	top:0px;  
+	left:0px;
+}
+#toPopup {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 5px solid #ccc;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+	font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 10%;
+    width: 800px;
+	height: 500px;
+	overflow: scroll;
+    z-index: 2;
+}
+.loader {
+    background: url("../img/loading.gif") no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 32px;
+	display: none;
+	z-index: 9999;
+	top: 40%;
+	left: 50%;
+	position: absolute;
+	margin-left: -10px;
+}
+.closePopup {
+    background: url("../img/closebox.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    position: relative;
+    width: 30px;
+}
+
+#popup_content {
+    margin: 4px 7px;
+}
+/*
+#popup_content img{
+	border: thin 1px #09C;
+	padding: 5px;
+	margin: 5px;
+	background: #0FC;
+	float: left;
+}*/
+#img_source {
+    width: 200px;
+	float: left;
+}
+#img_content {
+    width: 550px;
+	float: right;
+}
+#local_dragdrop {
+	width: 90%;
+	height: 300px;
+	margin-top: 34px;
+	margin-left: 30px;
+	background: none repeat scroll 0% 0% whitesmoke;
+	border: 1px dashed black;
+	text-align: center;	
+	overflow: auto;
+}
+#local_dragdrop.hover { border: 1px dashed #0c0; }
+.img_upload {
+	clear: both;
+	width: 100%;
+}
+.file_info {
+	width: 190px;
+	float: left;
+	font-size: 11px;
+	font-weight:bold;
+	text-align: left;
+}
+#fileUploadDummy {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 98px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#action_group {
+	float: right;
+	margin-right: 25px;
+}
+/* Navigation */
+/*------navLeft------*/
+.disabled {
+	visibility: hidden;	
+}
+#img_logo{
+	min-height: 35px;
+}
+.source_list{
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	margin-bottom:18px;
+	list-style:none;
+	padding-left:15px;
+	padding-right:15px;
+	min-height: 300px;
+}
+.source_list>li>a{margin-left:-15px;margin-right:-15px;text-shadow:0 1px 0 rgba(255, 255, 255, 0.5); text-decoration:none; color: #000; display:block; border-left:thick solid #FFF;padding:3px 15px;}
+.source_list>li>a:hover{border-left:thick solid #CCC;}
+.source_list>.active>a,.source_list>.active>a:hover{border-left:thick solid #00F;}
+
+[class^="sicon-"], [class*=" sicon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../img/source-icons.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+	padding-right: 5px;
+}
+.sicon-home {
+    background-position: -96px -48px;
+}
+.sicon-facebook {
+    background-position: -48px -48px;
+}
+.sicon-download {
+    background-position: -144px -48px;
+}
+/* Drag Drop */
+#holder { border: 10px dashed #ccc; width: 300px; min-height: 300px; margin: 20px auto;}
+#holder.hover { border: 10px dashed #0c0; }
+
+#holder p { margin: 10px; font-size: 14px; }
+progress { float: right; margin: 25px 20px 0px 0px; }
+progress:after { content: '%'; }
+.fail { background: #c00; padding: 2px; color: #fff; }
+.hidden { display: none !important;}
+
+#fileUploadDummy {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 98px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* file picker */
+.icon-white {
+	color: #FFF;	
+}
+#bread {
+	padding: 3px 0px 1px 1px;
+	margin-bottom: 0px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#picker {
+	width: 400px;
+	float: left;
+}
+.picker_files_header {
+	padding: 10px 10px 10px;
+	font-size: 1.1em;
+	font-weight: 800;
+	border-bottom: 2px solid rgb(245, 245, 245);
+}
+#picker li {
+	list-style-type:none;
+    font-size: 1.1em;
+    padding: 5px 0px 5px 5px;
+	cursor: pointer;
+}
+#picker_files li:hover {
+    color: #ffffff;
+    background-color: #989898;
+}
+.filelist {
+    margin-top: 40px;   
+}
+
+.filelist>li:nth-child(odd)>a {
+    background-color: #edf3fe;
+}
+
+.filelist.nav a.selectedItem {
+    background-color: #3875d7;
+    color: #fff;
+}
+
+.filelist.nav > li > a:hover,
+.filelist.nav > li > a.selectedItem:hover {
+    color: #ffffff;
+    background-color: #989898;
+}
+
+.thumbnails > li {
+    height: 150px;
+    width: 150px;
+	float: left;
+	margin: 5px 10px 10px 10px;
+}
+
+.thumbnails > li a {
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.thumbnails > li a img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 130px;
+    line-height: 16px; /*For alt text*/
+ }
+
+.thumbnails h5 {
+    text-align: center;
+    overflow: hidden;
+    height: 1.3em;
+	font-weight: 800;
+	margin-top: -20px;
+}
+
+.filelist.thumbnails a.selectedItem img,
+.filelist.thumbnails a.selectable:hover img,
+.filelist.thumbnails a.selectedItem:hover img {
+    opacity: 0.5;
+    color: #fff;
+    background-color: transparent;
+}
+
+/* For the case where you just clicked to remove it */
+.filelist.thumbnails a.selectable.selectedItemActive:hover {
+    background: transparent;
+}
+
+.filelist.thumbnails a.selectedItem,
+.filelist.thumbnails a.selectedItem.selectedItemActive:hover {
+    background: transparent url("../img/check.png") no-repeat 50% 50%;
+	background-size: 130px 130px;
+}
+
+.filelist.thumbnails a.selectable:hover {
+    background: transparent url("../img/plus.png") no-repeat 50% 50%;
+	background-size: 130px 130px;
+}
+.filelist.thumbnails a.selectedItem:hover {
+    background: transparent url("../img/x.png") no-repeat 50% 50%;
+	background-size: 130px 130px;
+}
+
+#content.saveas .filelist.thumbnails a.selectable:hover,
+.filelist.thumbnails a.selectable.disabled:hover {
+    background: transparent;
+    border-color: #DDD;
+}
+
+.thumbnail > img {
+    max-height: 100%;
+}
+
+.thumbnail.disabled > img {
+    opacity: .5
+}
+
+
+#picker_preview {
+    width: 150px;
+	float: right;
+	overflow: auto;
+}
