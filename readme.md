@@ -23,7 +23,7 @@ View included index.html to see usage and setup. Mainly one requires the appropr
    	<div id="backgroundPopup"></div>
 
 The link to call the pop-up is:
-	<a href="#" class="topopup">Click Here Trigger</a>
+	'<a href="#" class="topopup">Click Here Trigger</a>'
 
 sample
 ======
